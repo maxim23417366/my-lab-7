@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+/* --- Стилі для Завдання 2 (Покращена Галерея) --- */
+
+/* Контейнер-сітка */
+.goods-gallery {
+    display: grid;
+    /* Адаптивність: картки будуть автоматично переноситись.
+       Мінімальна ширина картки 220px, максимальна - розтягується. */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Сама картка товару */
+.goods-card {
+    background-color: #ffffff;
+    border-radius: 16px; /* Округлені кути */
+    padding: 20px;
+    text-align: center;
+    /* М'яка тінь для об'єму */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    /* Плавна анімація для всіх властивостей */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+    /* Щоб картка виглядала гарно, навіть якщо контенту мало */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Ефект при наведенні мишкою */
+.goods-card:hover {
+    transform: translateY(-10px); /* Картка "підлітає" вгору */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15); /* Тінь стає глибшою */
+    border-color: #007bff; /* Легка синя рамка */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Зображення в картці */
+.goods-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain; /* Картинка не розтягується непропорційно */
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* Легкий зум картинки при наведенні на картку */
+.goods-card:hover img {
+    transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Назва товару */
+.goods-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Ціна товару */
+.goods-price {
+    color: #28a745; /* Зелений колір ціни */
+    font-weight: 800;
+    font-size: 1.4em;
+    margin-top: auto; /* Притискає ціну до низу картки */
+    background-color: #e6f9e9; /* Світло-зелений фончик під ціною */
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
 }

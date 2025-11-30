@@ -1,16 +1,23 @@
 {
   "files": {
     "main.css": "/my-lab-7/static/css/main.1dc86a1e.css",
-    "main.js": "/my-lab-7/static/js/main.15d3d059.js",
+    "main.js": "/my-lab-7/static/js/main.308d3486.js",
     "static/js/453.ff926c50.chunk.js": "/my-lab-7/static/js/453.ff926c50.chunk.js",
     "static/media/city.jpg": "/my-lab-7/static/media/city.76f77667a71d44b6fbc6.jpg",
+    "static/media/PLA_silky_shine.jpg": "/my-lab-7/static/media/PLA_silky_shine.1ee95a36abd771f44358.jpg",
+    "static/media/ELEGOO_PETG.jpg": "/my-lab-7/static/media/ELEGOO_PETG.5926688f17595a5157e4.jpg",
+    "static/media/Creality_Hyper_PETG.jpg": "/my-lab-7/static/media/Creality_Hyper_PETG.67877657d9d7999ecb68.jpg",
+    "static/media/Creality_TPU.jpg": "/my-lab-7/static/media/Creality_TPU.24dd23ad3d2a0d77542b.jpg",
+    "static/media/Creality_PLA+.jpg": "/my-lab-7/static/media/Creality_PLA+.3928841dbcd386a0bd01.jpg",
+    "static/media/Creality_PETG.jpg": "/my-lab-7/static/media/Creality_PETG.09dbd4a82b8d7e784aa6.jpg",
+    "static/media/Gembird_ABS.jpg": "/my-lab-7/static/media/Gembird_ABS.ee5499fa11416ce3fc29.jpg",
     "index.html": "/my-lab-7/index.html",
     "main.1dc86a1e.css.map": "/my-lab-7/static/css/main.1dc86a1e.css.map",
-    "main.15d3d059.js.map": "/my-lab-7/static/js/main.15d3d059.js.map",
+    "main.308d3486.js.map": "/my-lab-7/static/js/main.308d3486.js.map",
     "453.ff926c50.chunk.js.map": "/my-lab-7/static/js/453.ff926c50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1dc86a1e.css",
-    "static/js/main.15d3d059.js"
+    "static/js/main.308d3486.js"
   ]
 }
